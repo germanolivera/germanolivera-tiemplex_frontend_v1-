@@ -1,0 +1,101 @@
+.spa-contenedor {
+	width: 1200px;
+	margin: 0 auto;
+	padding: 4rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	background-color: #1b205bd5;
+	border: 1px solid #3757c1;
+	border-radius: 15px;
+	box-shadow: 3px 5px 22px -4px rgba(0, 0, 0, 0.75);
+	-webkit-box-shadow: 3px 5px 22px -4px rgba(0, 0, 0, 0.75);
+	-moz-box-shadow: 3px 5px 22px -4px rgba(0, 0, 0, 0.75);
+}
+
+.tabla-turnos {
+	width: 100%;
+	border-collapse: collapse;
+	margin-top: 1rem;
+	background-color: #1a2b8181;
+}
+
+.tabla-turnos th,
+.tabla-turnos td {
+	border: 0.5px solid #ccc;
+	padding: 0.5rem;
+	text-align: left;
+}
+
+.boton-nuevo {
+	margin-top: 1rem;
+	padding: 0.5rem 1.5rem;
+	cursor: pointer;
+	border-radius: 5px;
+	border: 1px solid white;
+	color: white;
+	background-color: transparent;
+}
+
+.formulario-turno {
+	margin-top: 1rem;
+}
+
+.formulario-turno input {
+	display: block;
+	margin-bottom: 0.5rem;
+	padding: 0.5rem;
+	color: white;
+	background-color: transparent;
+}
+
+.botonera-formulario {
+	display: flex;
+	gap: 1rem;
+	margin-top: 1rem;
+}
+
+.botonera-formulario button {
+	padding: 0.5rem 1rem;
+	cursor: pointer;
+	border-radius: 5px;
+	border: 1px solid white;
+	color: white;
+	background-color: transparent;
+}
+
+select {
+	display: block;
+	width: 100%;
+	margin-bottom: 0.5rem;
+	padding: 0.5rem;
+	font-size: 1rem;
+	color: white;
+	background-color: transparent;
+}
+
+.celda-observaciones {
+	max-width: 200px; /* o el ancho que desees */
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.celda-observaciones:hover {
+	overflow: visible;
+	white-space: normal;
+	z-index: 10;
+	position: relative;
+}
+
+textarea {
+	padding-top: 5px;
+	padding-left: 5px;
+	color: rgb(0, 0, 0);
+	font-family: "Roboto Flex", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 500;
+	font-size: 1rem;
+	background: white;
+}

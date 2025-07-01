@@ -1,0 +1,47 @@
+/* index.css */
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap");
+
+* {
+	/* box-sizing: border-box; */
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	height: 100%;
+	margin: 0px;
+}
+
+body {
+	height: 90%;
+	margin: 10px;
+	color: white;
+	font-family: "Roboto Flex", sans-serif;
+	font-optical-sizing: auto;
+  font-weight: 100;
+	/* 1) Capas de fondo (el primer gradiente va encima) */
+	background-image:
+    /* Líneas horizontales (cuadrícula) */ linear-gradient(
+			rgba(68, 76, 247, 0.5) 1px,
+			transparent 1px
+		),
+		/* Líneas verticales (cuadrícula) */
+			linear-gradient(
+				to right,
+				rgba(68, 76, 247, 0.5) 1px,
+				transparent 1px
+			),
+		/* Degradado rojo de arriba (claro) a abajo (oscuro) */
+			linear-gradient(to bottom, #2036a0, #181a1c);
+
+	/* 2) Tamaño de cada capa (coincide orden con background-image) */
+	background-size: 20px 20px, /* grid horizontal */ 20px 20px,
+		/* grid vertical */ 100% 100%; /* degradado ocupa todo el área */
+
+	/* 3) Repetición de cada capa */
+	background-repeat: repeat, /* repite la cuadrícula horizontal */ repeat,
+		/* repite la cuadrícula vertical */ no-repeat; /* degradado sólo una vez */
+
+	/* Opcional: si quieres que el contenido no se vea “fantasma”, olvida opacity */
+}
